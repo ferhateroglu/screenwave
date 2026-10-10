@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+.idea/
+recordings/
+# built by scripts/build_helper.sh / install.sh
+bin/swcursor

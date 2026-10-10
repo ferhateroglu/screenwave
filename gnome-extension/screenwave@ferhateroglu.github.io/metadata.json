@@ -1,0 +1,7 @@
+{
+  "uuid": "screenwave@ferhateroglu.github.io",
+  "name": "Screenwave",
+  "description": "Top-bar indicator and controls for the Screenwave screen recorder: recording / paused state, elapsed time, cursor zoom, and a 3-2-1 countdown. Needs the Screenwave app.",
+  "url": "https://github.com/ferhateroglu/screenwave",
+  "shell-version": ["45", "46", "47", "48", "49"]
+}

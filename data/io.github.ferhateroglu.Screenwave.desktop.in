@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Screenwave
+Comment=Screen recorder for GNOME Wayland with cursor-following zoom
+Exec=@BIN@ %U
+Icon=io.github.ferhateroglu.Screenwave
+Terminal=false
+Categories=AudioVideo;Video;Recorder;GNOME;GTK;
+Keywords=screen;record;recorder;screencast;capture;zoom;
+StartupNotify=true
+DBusActivatable=true

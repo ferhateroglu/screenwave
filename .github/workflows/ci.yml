@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            python3-gi gir1.2-glib-2.0 gir1.2-gstreamer-1.0 gir1.2-gst-plugins-base-1.0 \
+            gcc pkg-config libpipewire-0.3-dev
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -t . -v
+      - name: Build the cursor helper
+        run: scripts/build_helper.sh
+      - name: Shell script syntax
+        run: for f in install.sh uninstall.sh run.sh scripts/*.sh; do bash -n "$f"; done

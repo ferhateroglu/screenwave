@@ -1,0 +1,38 @@
+.screenwave-recording {
+    color: #e01b24;
+}
+
+.screenwave-paused {
+    color: #f6d32d;
+}
+
+.screenwave-countdown {
+    color: #ff7800;
+}
+
+.screenwave-zoom {
+    color: #2ec27e;
+}
+
+/* fixed width so the panel doesn't shift as the seconds tick */
+.screenwave-time {
+    font-feature-settings: "tnum";
+    min-width: 3.4em;
+    text-align: center;
+    padding: 0 2px;
+}
+
+/* the big 3-2-1 in the middle of the recorded monitor */
+.screenwave-countdown-overlay {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.screenwave-countdown-label {
+    color: #ffffff;
+    font-size: 110px;
+    font-weight: 800;
+    font-feature-settings: "tnum";
+}
